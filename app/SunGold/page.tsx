@@ -9,7 +9,7 @@ import Footer from '../components/homePage/Footer/page';
 
 
 function AboutUs() {
-    const bannerImg = '/About/Banner.png'
+    const bannerImg = '/About/sunGold.jpg'
     const bannerText = 'SUN GROUP OF COMPANIES'
     const bannerTitle = 'SUNOIL TRADING REFINED OIL PRODUCT ABROAD LLC'
 
@@ -18,7 +18,7 @@ function AboutUs() {
 
         return (
 
-            <div className=' lg:h-screen md:h-96 h-[280px] lg:bg-contain bg-repeat-x flex justify-center bg-cover '
+            <div className=' lg:h-screen md:h-96 h-[280px] lg:bg-fill bg-repeat-x flex justify-center bg-cover '
                 style={{ backgroundImage: `url(${bannerImg})` }}
             >
                 <div className='absolute self-center justify-center text-center'>
@@ -47,8 +47,8 @@ function AboutUs() {
             <Navbar />
             <Banner />
             <About_us />
-            <What_We_Do />
-            <OurClients />
+            {/* <What_We_Do /> */}
+            {/* <OurClients /> */}
             <ContactUs />
             <Footer />
         </main>

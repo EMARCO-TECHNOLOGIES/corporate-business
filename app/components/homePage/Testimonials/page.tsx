@@ -10,7 +10,7 @@ function Testimonials() {
         {
             name: 'ALEX JOHN',
             img: '/home/people.png',
-            message: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum justo vel ipsum condimentum finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed fermentum enim eget sodales suscipit. Sed metus tellus, “'
+            message: `“Sun Group's exceptional expertise in trading oil and gas is unparalleled. Their Comment to quality and reliability makes them our go-to partner for all our trading needs.Their professionalism make them a top choice for our business needs.“`
         },
         {
             name: 'Robert',
