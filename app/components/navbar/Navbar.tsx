@@ -34,22 +34,26 @@
 
 "use client"
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const router = useRouter()
+
     const NavbarItems = [
         'Home',
-        'Services',
-        // {name:'Services',onclick:'/services'}
-        'Companies',
-        // {name:'Companies',onclick:'/companies'}
+        // { name: 'Home', onclick: '#Home' }
+        // 'Services',
+        // { name: 'Services', onclick: '#services' },
+        // { name: 'Companies', onclick: '#companies' },
         'About',
-        // { name: 'About', onclick: '/about' },
+        'Companies',
+        // { name: 'About', onclick: '#about' },
         'Contact'
-        // {name:'Contact Us',onclick:'/contact'}
+        // { name: 'Contact Us', onclick: '#contact' }
     ];
 
     return (
@@ -89,10 +93,10 @@ const Navbar = () => {
                     {NavbarItems.map((item, index) => (
 
                         <AnchorLink key={index} href={`#${item.toLowerCase()}`}>
-
                             <button
                                 key={index}
                                 className="block lg:inline-block mt-4 lg:mt-0 mx-2 text-[#000080] font-semibold hover:text-[#87b5eb] "
+                                onClick={item === 'Home' ? () => router.push('/') : null}
                             >
                                 {item}
                             </button>

@@ -47,8 +47,8 @@ function AboutUs() {
             <Navbar />
             <Banner />
             <About_us />
-            <What_We_Do />
-            <OurClients />
+            {/* <What_We_Do /> */}
+            {/* <OurClients /> */}
             <ContactUs />
             <Footer />
         </main>
