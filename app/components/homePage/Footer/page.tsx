@@ -5,7 +5,19 @@ import React from 'react'
 function Footer() {
 
     const handleEmailClick = () => {
-        window.location.replace('mailto:info@sunoilgroup.com');
+        // window.location.href = 'mailto:info@sunoilgroup.com'
+        // if (!window.location.href) {
+        //     window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
+        // }
+        const platform = window.navigator.platform
+        console.log(platform, '454454')
+
+
+        if (platform.toLowerCase().includes("iphone") || platform.toLowerCase().includes("mac")) {
+            window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
+        } else {
+            window.location.href = 'mailto:info@sunoilgroup.com'
+        }
     };
 
     return (
@@ -37,7 +49,7 @@ function Footer() {
 
                         <div className='flex flex-col text-white md:text-sm text-xs'>
                             <small>Phone: +971-45656699</small>
-                            <small>Phone: +971 509343324</small>
+                            <small>Phone: +971-508595905</small>
 
                         </div>
                         <div className='flex justify-center md:hidden '>

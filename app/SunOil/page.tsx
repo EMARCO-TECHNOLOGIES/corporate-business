@@ -10,6 +10,7 @@ import ContactUs from '../components/homePage/ContactUs/page';
 import Footer from '../components/homePage/Footer/page';
 import Verticals from '../components/homePage/Verticals/page';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Address from './components/address/page';
 
 
 function AboutUs() {
@@ -57,6 +58,7 @@ function AboutUs() {
             <Navbar />
             <Banner />
             <About_us />
+            {/* <Address /> */}
             {/* <What_We_Do /> */}
             {/* <OurClients /> */}
             <Verticals />
