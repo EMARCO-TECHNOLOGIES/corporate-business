@@ -1,5 +1,7 @@
 "use client"
 
+import { faAddressBook, faEnvelope, faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -11,7 +13,7 @@ function AboutUs() {
     We have unrivalled expertise in the exploration, mining, sorting, sales, grading and marketing of diamond.`
 
     return (
-        <div className=' flex justify-center' id='about'>
+        <div className=' flex justify-center lg:mt-16' id='about'>
             <div className='flex lg:flex-row flex-col lg:p-20 md:p-10 lg:w-[100%] lg:h-[600px] mt-10 items-center'>
                 <div className='lg:w-1/3'>
                     <img src="/home/IMG_4.jpg" alt="" className='lg:w-[418px] lg:h-[437px] md:w-[420px] w-[250px] lg:rounded-tl-full lg:rounded-b-full lg:rounded-tr-none rounded-br-full rounded-t-full' />
@@ -27,6 +29,15 @@ function AboutUs() {
                                 Connect Us
                             </button>
                         </AnchorLink>
+                    </div>
+                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm '>
+                        <h3>Address :</h3>
+                        <h5>Unit No: 4718</h5>
+                        <h5>DMCC Business Centre</h5>
+                        <h5>Level No 1</h5>
+                        <h5>Jewellery & Complex 3 </h5>
+                        <h5>Dubai, United Arab Emirates </h5>
+
                     </div>
                 </div>
             </div>
