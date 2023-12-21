@@ -1,5 +1,4 @@
 import React from 'react'
-// import H3 from '../../H3/page'
 
 function Footer() {
     return (
@@ -23,13 +22,18 @@ function Footer() {
                         <img src="/home/linkedin.png" alt="" className='w-5 h-5' />
                         <img src="/home/twitter.png" alt="" className='w-5 h-5' />
                     </div>
+                    <div className='py-10'>
+
+                        <a href='mailto:info@sunoilgroup.com' className='text-xs text-blue-500 ' ><span className='text-sm'>Mail us here:</span>  info@sunoilgroup.com</a>
+                    </div>
+
                 </div>
                 <div>
                     <h3 className='font-semibold text-white mb-3' >{`Contact Us`}</h3>
                     <div className='flex flex-col text-white'>
 
-                        <small><span >Phone:</span>+971 508595905</small>
-                        <small><span >Phone:</span>+971 509343324</small>
+                        <small><span >Phone:</span> +971 045656699</small>
+                        <small><span >Phone:</span> +971 509343324</small>
                     </div>
 
                 </div>
@@ -40,15 +44,3 @@ function Footer() {
 
 export default Footer
 
-// Company Registration No : 195943
-// Full Name of Corporation : RISING SUN ARKAN LTD
-//  Street Address State
-// Country
-// Postal Code Telephone Number Fax Number Mobile Number Email Address
-// : KUTOWAROO LANE, BELLE VUE, MAUREL : MAUREL
-// : REPUBLIC OF MAURITIUS
-// 30104
-// : +971 508595905
-// : N/A
-// : +230 5835 6664
-// : info@sunoilllc.com 

@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function AboutUs() {
 
@@ -29,9 +32,13 @@ function AboutUs() {
                     <p className='lg:text-lg'>
                         {content}
                     </p>
-                    <button className='border-2 border-green-600 rounded-2xl px-4 py-2 text-green-800 text-sm'>
-                        Connect Us
-                    </button>
+                    <div className='mt-5'>
+                        <AnchorLink href={`#contact`}>
+                            <button className='border-2 border-green-600 rounded-2xl px-4 py-2 text-green-800 text-sm'>
+                                Connect Us
+                            </button>
+                        </AnchorLink>
+                    </div>
                 </div>
             </div>
 

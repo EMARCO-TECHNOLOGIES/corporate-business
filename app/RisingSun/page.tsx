@@ -39,7 +39,6 @@ function AboutUs() {
                         {/* <h1 className='text-lg text-black'> heeeey</h1> */}
                     </div>
                     <AnchorLink href={`#contact`}>
-
                         <button className=' bg-transparent md:px-6 px-2 md:py-3 py-1 rounded-md uppercase  lg:top-[490px] lg:left-[680px] md:top-[320px] md:left-[350px] top-[130px] left-[130px] border-2 border-white text-white hover:bg-white hover:text-black md:text-lg text-xs'>
                             Enquire Now
                         </button>
