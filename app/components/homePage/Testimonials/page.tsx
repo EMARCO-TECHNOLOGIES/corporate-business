@@ -10,7 +10,7 @@ function Testimonials() {
         {
             name: 'ALEX JOHN',
             img: '/home/people.png',
-            message: `“Sun Group's exceptional expertise in trading oil and gas is unparalleled. Their Comment to quality and reliability makes them our go-to partner for all our trading needs.Their professionalism make them a top choice for our business needs.“`
+            message: `“Sun Oil Group's exceptional expertise in trading oil and gas is unparalleled. Their Comment to quality and reliability makes them our go-to partner for all our trading needs.Their professionalism make them a top choice for our business needs.“`
         },
         {
             name: 'Robert',
@@ -54,9 +54,9 @@ function Testimonials() {
                                         {/* <div> */}
                                         <img src={item.img} alt="" className='w-20 h-20' />
                                         {/* </div> */}
-                                        <div className='space-y-10 md:w-2/3 '>
+                                        <div className='space-y-10 md:w-2/3 text-justify '>
                                             <p>{item.message}</p>
-                                            <small>{item.name}</small>
+                                            <small className='text-white font-semibold '>{item.name}</small>
                                         </div>
                                     </SwiperSlide>
                                 )}

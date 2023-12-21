@@ -9,11 +9,12 @@ import Testimonials from './Testimonials/page'
 import ContactUs from './ContactUs/page'
 import Footer from './Footer/page'
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Directors from './Directors/page'
 
 function HomePage() {
     const bannerImg = '/home/Banner1.jpg'
     const bannerTitle = 'Breaking Barriers, Building Bridges !'
-    const bannertext = 'SUN GROUP OF COMPANIES'
+    const bannertext = 'Sun Oil Group OF COMPANIES'
 
 
 
@@ -54,6 +55,7 @@ function HomePage() {
         <div>
             <Banner />
             <About />
+            <Directors />
             <Verticals />
             <WhyUs />
             <Testimonials />

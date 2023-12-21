@@ -15,7 +15,7 @@ import MineText from './components/mineText/page';
 
 function AboutUs() {
     const bannerImg = '/About/sunGold.jpg'
-    const bannerText = 'SUN GROUP OF COMPANIES'
+    const bannerText = 'Sun Oil Group OF COMPANIES'
     const bannerTitle = 'SUNOIL TRADING REFINED OIL PRODUCT ABROAD LLC'
 
 

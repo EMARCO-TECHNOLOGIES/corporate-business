@@ -6,7 +6,7 @@ function ContactUs() {
         <div className='flex md:flex-row flex-col lg:p-20 p-10 items-center md:space-x-8 space-y-6 ' id='contact'>
             <div className='md:w-1/3 space-y-5'>
                 <h1 className={`font-bold  text-[36px]`} >{`HEY, LET'S TALK.`}</h1>
-                <p className='text-[16px]'>Get in touch with us to discuss your needs,
+                <p className='text-[16px] text-justify'>Get in touch with us to discuss your needs,
                     ask questions, or provide feedback.
                     We're eager to hear from you</p>
             </div>

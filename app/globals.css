@@ -26,7 +26,8 @@ h1 {
 }
 
 p {
-  color: black
+  color: black;
+  text-align: justify;
 }
 
 h3 {

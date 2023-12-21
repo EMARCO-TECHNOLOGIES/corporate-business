@@ -14,7 +14,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function AboutUs() {
     const bannerImg = '/About/sunGeneral.jpg'
-    const bannerText = 'SUN GROUP OF COMPANIES'
+    const bannerText = 'Sun Oil Group OF COMPANIES'
     const bannerTitle = 'SUN GENERAL TRADING LLC'
 
 
