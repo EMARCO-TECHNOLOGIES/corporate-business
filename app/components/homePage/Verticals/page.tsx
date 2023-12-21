@@ -12,19 +12,6 @@ function Verticals() {
     const router = useRouter()
     const items = [
         {
-            img: '/home/IMG_2.jpg',
-            name: 'RISING SUN ARKAN LTD',
-            // desc: 'YouTube'
-            redirect: '/RisingSun'
-        },
-        {
-            img: '/home/sungeneral.jpg',
-            name: 'SUN GENERAL TRADING LLC',
-            // desc: 'YouTube'
-            redirect: '/SunGeneral'
-
-        },
-        {
             img: '/home/IMG_5.jpg',
             name: 'SUNOIL TRADING REFINED OIL PRODUCTS ABROAD LLC',
             // desc: 'YouTube',
@@ -37,6 +24,20 @@ function Verticals() {
             redirect: '/SunGold'
 
         },
+        {
+            img: '/home/IMG_2.jpg',
+            name: 'RISING SUN ARKAN LTD',
+            // desc: 'YouTube'
+            redirect: '/RisingSun'
+        },
+        {
+            img: '/home/sungeneral.jpg',
+            name: 'SUN GENERAL TRADING LLC',
+            // desc: 'YouTube'
+            redirect: '/SunGeneral'
+
+        },
+
 
     ]
 
@@ -84,7 +85,7 @@ function Verticals() {
         // </div>
 
         <div className='md:p-10 lg:p-20 p-3  ' id='companies' >
-            <div className='rounded-lg  border-opacity-50 md:p-10 py-8 border-2'>
+            <div className='rounded-lg border-opacity-50 md:p-10 py-8 border-2'>
 
                 <div className='text-center'>
                     <h1 className={`text-[36px] font-bold `} >{'OUR VERTICALS'} </h1>
@@ -94,11 +95,11 @@ function Verticals() {
                     <div className='grid gap-10 md:p-5 p-3 mt-5 md:grid-cols-2 justify-center  '>
                         {items.map((item, index) => (
                             <div key={index} className=' flex w-full space-x-4 lg:shadow-md'>
-                                <div className='flex items-center'>
-                                    <img src={item.img} alt="" className='lg:w-[120px] lg:h-[120px]' />
+                                <div className='flex items-center '>
+                                    <img src={item.img} alt="" className='lg:w-[120px] lg:h-[120px] w-[120px] h-[120px]   ' />
                                 </div>
-                                <div className={'space-y-5 p-3'}>
-                                    <h3 className='font-semibold'>{item.name} </h3>
+                                <div className={'lg:space-y-5 space-y-2 p-3 w-1/2'}>
+                                    <h3 className='font-semibold text-sm'>{item.name} </h3>
                                     <button className='px-2 py-1 rounded-md border border-black text-black hover:bg-black hover:text-slate-50' onClick={() => router.push(item.redirect)}>Explore</button>
 
                                 </div>

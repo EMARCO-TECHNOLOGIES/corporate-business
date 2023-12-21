@@ -1,8 +1,11 @@
+"use client"
+
 import React from 'react'
+
 // import H1 from '../../H1/page'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function About() {
-
 
 
 
@@ -30,9 +33,14 @@ function About() {
                 <p className='text-[16px] text-black'>
                     {content}
                 </p>
-                <button className='px-4 py-2 text-xs border-2 border-[#34373A] rounded-md text-black hover:bg-black hover:text-white'>
-                    Connect Now
-                </button>
+                <div >
+
+                    <AnchorLink href={`#contact`}>
+                        <button className='px-4 py-2 text-xs border-2 border-[#34373A] rounded-md text-black hover:bg-black hover:text-white'>
+                            Connect Now
+                        </button>
+                    </AnchorLink>
+                </div>
             </div>
             <img src="/home/pattern2.png" alt="" className='w-[400px] h-[400px] absolute md:block hidden -right-40 top-48 -rotate-20 opacity-50' />
         </div>

@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function AboutUs() {
 
@@ -8,19 +11,23 @@ function AboutUs() {
     We have unrivalled expertise in the exploration, mining, sorting, sales, grading and marketing of diamond.`
 
     return (
-        <div className=' flex justify-center'>
-            <div className='flex md:flex-row flex-col lg:p-20 md:p-10 lg:w-[100%] md:mt-0 mt-10 items-center'>
-                <div className='md:w-1/3'>
-                    <img src="/home/IMG_4.jpg" alt="" className='lg:w-[418px] lg:h-[437px] md:w-[280px] w-[180px] rounded-tl-full rounded-b-full' />
+        <div className=' flex justify-center' id='about'>
+            <div className='flex lg:flex-row flex-col lg:p-20 md:p-10 lg:w-[100%] lg:h-[600px] mt-10 items-center'>
+                <div className='lg:w-1/3'>
+                    <img src="/home/IMG_4.jpg" alt="" className='lg:w-[418px] lg:h-[437px] md:w-[420px] w-[250px] lg:rounded-tl-full lg:rounded-b-full lg:rounded-tr-none rounded-br-full rounded-t-full' />
                 </div>
-                <div className='md:w-2/3 space-y-5 p-10'>
+                <div className='lg:w-2/3 space-y-5 p-10'>
                     <h1 className='text-4xl font-bold '>About Us</h1>
-                    <p className='text-lg'>
+                    <p className='lg:text-lg'>
                         {content}
                     </p>
-                    <button className='border-2 border-green-600 rounded-2xl px-4 py-2 text-green-800 text-sm'>
-                        Connect Us
-                    </button>
+                    <div className='mt-5'>
+                        <AnchorLink href={`#contact`}>
+                            <button className='border-2 border-green-600 rounded-2xl px-4 py-2 text-green-800 text-sm'>
+                                Connect Us
+                            </button>
+                        </AnchorLink>
+                    </div>
                 </div>
             </div>
 

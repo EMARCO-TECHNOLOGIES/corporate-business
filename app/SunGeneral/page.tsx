@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 // import Banner from '../components/homePage/Banner/page'
 import Navbar from '../components/navbar/Navbar'
@@ -6,6 +8,8 @@ import What_We_Do from './components/section 3/page';
 import OurClients from './components/section 4/page';
 import ContactUs from '../components/homePage/ContactUs/page';
 import Footer from '../components/homePage/Footer/page';
+import Verticals from '../components/homePage/Verticals/page';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 function AboutUs() {
@@ -33,9 +37,11 @@ function AboutUs() {
                         <h1 className={' lg:text-[48px] md:text-[25px] text-[15px] text-white font-bold'} >{bannerTitle}</h1>
                         {/* <h1 className='text-lg text-black'> heeeey</h1> */}
                     </div>
-                    <button className=' bg-transparent md:px-6 px-2 md:py-3 py-1 rounded-md uppercase  lg:top-[490px] lg:left-[680px] md:top-[320px] md:left-[350px] top-[130px] left-[130px] border-2 border-white text-white hover:bg-white hover:text-black md:text-lg text-xs'>
-                        Enquire Now
-                    </button>
+                    <AnchorLink href={`#contact`}>
+                        <button className=' bg-transparent md:px-6 px-2 md:py-3 py-1 rounded-md uppercase  lg:top-[490px] lg:left-[680px] md:top-[320px] md:left-[350px] top-[130px] left-[130px] border-2 border-white text-white hover:bg-white hover:text-black md:text-lg text-xs'>
+                            Enquire Now
+                        </button>
+                    </AnchorLink>
                 </div>
             </div>
         )
@@ -49,6 +55,7 @@ function AboutUs() {
             <About_us />
             {/* <What_We_Do /> */}
             {/* <OurClients /> */}
+            <Verticals />
             <ContactUs />
             <Footer />
         </main>
