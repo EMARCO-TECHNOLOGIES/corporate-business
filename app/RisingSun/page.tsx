@@ -15,7 +15,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function AboutUs() {
     const bannerImg = '/About/RaisingSun.jpg'
-    const bannerText = 'SUN GROUP OF COMPANIES'
+    const bannerText = 'Sun Oil Group OF COMPANIES'
     const bannerTitle = 'RISING SUN ARKAN LTD'
 
 

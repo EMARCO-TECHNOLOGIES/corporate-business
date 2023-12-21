@@ -9,17 +9,17 @@ function About() {
 
 
 
-    const heading = 'ABOUT SUN GROUP'
+    const heading = 'ABOUT SUN OIL GROUP'
 
-    const content = `Welcome to Sun Group: Illuminating Global Horizons
+    const content = `Welcome to Sun Oil Group: Illuminating Global Horizons
 
-    At Sun Group, we're more than just a conglomerate; we're the radiant force behind numerous oil and trading companies  spanning the globe. Our commitment to excellence and innovation has propelled us to the forefront of the industry, shining brightly across continents.
+    At Sun Oil Group, we're more than just a conglomerate; we're the radiant force behind numerous oil and trading companies  spanning the globe. Our commitment to excellence and innovation has propelled us to the forefront of the industry, shining brightly across continents.
     
-    With a legacy built on unwavering integrity and a forward-thinking approach, Sun Group has established a distinguished presence in the oil and trading sectors. Our extensive network and expertise empower us to navigate diverse markets, fostering growth and sustainable success.
+    With a legacy built on unwavering integrity and a forward-thinking approach, Sun Oil Group has established a distinguished presence in the oil and trading sectors. Our extensive network and expertise empower us to navigate diverse markets, fostering growth and sustainable success.
     
     Driven by a passion for excellence, our teams tirelessly explore new avenues, leveraging cutting-edge technologies and strategic partnerships to illuminate opportunities in every corner of the world. Our commitment to quality, reliability, and responsible practices serves as the guiding light for all our endeavors.
     
-    As we continue to expand our footprint across borders, Sun Group remains dedicated to fostering relationships, delivering value, and illuminating pathways to a brighter, more interconnected future. Join us on this luminous journey as we redefine boundaries and illuminate possibilities across the global landscape.`
+    As we continue to expand our footprint across borders, Sun Oil Group remains dedicated to fostering relationships, delivering value, and illuminating pathways to a brighter, more interconnected future. Join us on this luminous journey as we redefine boundaries and illuminate possibilities across the global landscape.`
 
 
     return (
@@ -27,10 +27,10 @@ function About() {
             {/* <div className='lg:w-[50%] lg:p-10 p-5 flex lg:justify-start justify-center'>
                 <img src="/home/About.png" alt="" className='md:w-[610px] md:h-[369px]' />
             </div> */}
-            <img src="/home/pattern1.png" alt="" className='w-[500px] h-[400px] absolute md:block hidden lg:left-0 lg:top-[0px]' />
+            <img src="/home/pattern1.png" alt="" className='w-[500px] h-[400px] absolute md:block hidden lg:left-0 lg:top-[0px] ' />
             <div className='lg:w-[80%] lg:p-10 p-5 space-y-4'>
                 <h1 className={` font-bold md:text-[48px] md:text-left text-center text-[28px] `}>{heading}</h1>
-                <p className='text-[16px] text-black'>
+                <p className='text-[16px] text-black text-justify'>
                     {content}
                 </p>
                 <div >
