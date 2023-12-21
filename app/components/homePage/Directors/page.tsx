@@ -2,8 +2,8 @@ import React from 'react'
 
 function Directors() {
     return (
-        <div className='flex justify-center '>
-            <div className='md:w-2/3  space-y-14 p-5'>
+        <div className='flex justify-center p-3'>
+            <div className='md:w-2/3  space-y-14 p-4  border-2 rounded-lg'>
 
                 <div className='space-y-6 text-center'>
                     <h3 className='text-3xl text-[#000080] opacity-70'>A job is worth doing together</h3>
