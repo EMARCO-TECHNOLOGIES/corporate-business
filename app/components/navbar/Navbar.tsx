@@ -57,18 +57,26 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="bg-opacity-30 bg-[#D9D9D94D] backdrop-filter backdrop-blur-md absolute top-0 left-0 w-full z-50  ">
-            <div className="container mx-auto flex justify-between items-end md:py-4 md:pt-16 py-2 lg:px-32 px-10 ">
+        <nav className={`bg-opacity-30 md:pb-0 ${isOpen ? 'pb-5 ' : null} bg-[#D9D9D94D] backdrop-filter backdrop-blur-md absolute top-0 left-0 w-full z-50 `}>
+            <div className="container mx-auto flex justify-between items-end md:py-4 lg:pt-16 md:pt-4 pt-6 py-2 lg:px-32 px-10 ">
                 {/* Logo */}
-                <div className="text-xl font-bold text-gray-800  ">
+                {/* <div className="text-xl font-bold text-gray-800  ">
                     {!isOpen ? <img src="/Navbar/SUNLOGO.png" alt="" width={100} height={100} className='lg:w-[380px] absolute  lg:-top-[108px] left-0 lg:h-[380px] md:w-[220px] md:h-[200px] md:top-[8px] h-[150px] w-[150px] -top-[38px] bg-contain' /> : null}
+                </div> */}
+                <div className="text-xl font-bold text-gray-800  ">
+                    {!isOpen ? (
+                        <div className='absolute flex  lg:top-[32px] lg:left-20  md:top-[26px] md:left-6 top-[8px] left-5 '>
+                            <img src="/Navbar/logo.png" alt="" width={100} height={100} className='lg:w-[100px] lg:h-[90px] md:w-[80px] md:h-[60px]  h-[50px] w-[50px]  bg-contain ' />
+                            <h1 className='lg:mt-7 md:mt-5 -ml-2 lg:text-3xl md:text-xl text-sm mt-4'>SUN OIL GROUP</h1>
+                        </div>
+                    ) : null}
                 </div>
 
                 {/* Toggle button for mobile */}
                 <div className="md:hidden ">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-gray-100 focus:outline-none"
+                        className={`${isOpen ? 'absolute top-5 left-5' : 'text-gray-100 focus:outline-none'}`}
                     >
                         <svg
                             className="h-6 w-6"
@@ -89,8 +97,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Navbar Items */}
-                <div className={`md:flex items-center ${isOpen ? 'block' : 'hidden'} lg:space-x-16 space-x-8`}>
+                <div className={`md:flex items-center ${isOpen ? 'block' : 'hidden'} lg:space-x-16  space-x-5 `}>
                     {NavbarItems.map((item, index) => (
+                        // <div className=''>
 
                         <AnchorLink key={index} href={`#${item.toLowerCase()}`}>
                             <button
@@ -101,6 +110,7 @@ const Navbar = () => {
                                 {item}
                             </button>
                         </AnchorLink>
+                        // </div>
                     ))}
                 </div>
             </div>
