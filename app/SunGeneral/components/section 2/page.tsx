@@ -25,7 +25,7 @@ function AboutUs() {
         <div className=' flex justify-center' id='about'>
             <div className='flex lg:flex-row flex-col lg:p-20 md:p-10 lg:w-[100%] lg:h-[600px] mt-10 items-center'>
                 <div className='lg:w-1/3'>
-                    <img src="/home/SunGeneral.jpg" alt="" className='lg:w-[418px] lg:h-[437px] md:w-[420px] w-[250px] lg:rounded-tl-full lg:rounded-b-full lg:rounded-tr-none rounded-br-full rounded-t-full' />
+                    <img src="/home/sungeneral.jpg" alt="" className='lg:w-[418px] lg:h-[437px] md:w-[420px] w-[250px] lg:rounded-tl-full lg:rounded-b-full lg:rounded-tr-none rounded-br-full rounded-t-full' />
                 </div>
                 <div className='lg:w-2/3 space-y-5 p-10'>
                     <h1 className='text-4xl font-bold '>About Us</h1>
