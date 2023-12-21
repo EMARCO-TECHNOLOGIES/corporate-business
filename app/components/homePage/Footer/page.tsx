@@ -1,6 +1,13 @@
+"use client"
+
 import React from 'react'
 
 function Footer() {
+
+    const handleEmailClick = () => {
+        window.location.replace('mailto:info@sunoilgroup.com');
+    };
+
     return (
         <div className='p-10 md:px-20 flex md:flex-row flex-colitems-center  bg-[#000000f8] '
         >
@@ -17,7 +24,8 @@ function Footer() {
                     </div>
                     <div className='py-10 '>
 
-                        <a href='mailto:info@sunoilgroup.com' className='text-sm text-blue-500 ' ><span className='text-sm'>Mail us here:</span>  info@sunoilgroup.com</a>
+                        {/* <a href='mailto:info@sunoilgroup.com' className='text-sm text-blue-500 ' ><span className='text-sm'>Mail us here:</span>  info@sunoilgroup.com</a> */}
+                        <span onClick={handleEmailClick} className='text-sm text-blue-500 cursor-pointer'><span className='text-sm'>Mail us here:</span> info@sunoilgroup.com</span>
 
                     </div>
 
@@ -42,7 +50,7 @@ function Footer() {
 
             </div>
 
-        </div>
+        </div >
     )
 }
 
