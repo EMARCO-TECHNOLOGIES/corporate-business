@@ -32,19 +32,19 @@ function AboutUs() {
                     <div className='w-full p-10 pl-0 text-sm space-y-2 text-black'>
                         <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
-                            <h5>Phone: +97143413339</h5>
+                            <h5>+97143413339</h5>
                         </div>
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faGlobe} />
-                            <h5>website: www.sunoiltradingllc.com</h5>
+                            <h5>www.sunoiltradingllc.com</h5>
                         </div>
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faEnvelope} />
-                            <h5>Email: info@sunoiltradingllc.com</h5>
+                            <h5>info@sunoiltradingllc.com</h5>
                         </div>
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faAddressBook} />
-                            <h5>Address: Office No.213, Zainal Mohebi Plaza, 13 A Street, Dubai, United Arab Emirates</h5>
+                            <h5>Office No.213, Zainal Mohebi Plaza, 13 A Street, Dubai, United Arab Emirates</h5>
                         </div>
                     </div>
                 </div>
