@@ -13,8 +13,11 @@ function Footer() {
         console.log(platform, '454454')
 
 
-        if (platform.toLowerCase().includes("iphone") || platform.toLowerCase().includes("mac")) {
-            window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
+        if (platform.toLowerCase().includes("ios") || platform.toLowerCase().includes("mac")) {
+            // window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
+            // window.location.href = 'mailto:?to=info@sunoilgroup.com'
+            window.location.href = 'mailto:info@sunoilgroup.com'
+
         } else {
             window.location.href = 'mailto:info@sunoilgroup.com'
         }
@@ -61,8 +64,7 @@ function Footer() {
                 <img src="/Navbar/logo.png" alt="" className='md:w-[110px] md:h-[90px] w-12 h-12 -mt-3 md:block hidden' />
 
             </div>
-
-        </div >
+        </div>
     )
 }
 

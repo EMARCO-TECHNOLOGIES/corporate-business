@@ -41,7 +41,7 @@ function AboutUs() {
                             </button>
                         </AnchorLink>
                     </div>
-                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm'>
+                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm text-black'>
                         <h3>Address :</h3>
                         <h5>Street: 30 N, GOULD ST, STE 33507</h5>
                         <h5>SHERIDAN, WY 82801</h5>
@@ -50,12 +50,12 @@ function AboutUs() {
                         <h5>Dubai, United Arab Emirates </h5>
                         <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
-                            <h5>Phone: +16463965545,</h5>
-                            <h5>+971508595905</h5>
+                            {/* <h5>+16463965545,</h5> */}
+                            <h5>+971-508595905</h5>
                         </div>
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faEnvelope} />
-                            <h5>Email: info@sunoilllc.com</h5>
+                            <h5>info@sunoilllc.com</h5>
                         </div>
 
                     </div>
