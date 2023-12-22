@@ -29,7 +29,7 @@ function AboutUs() {
                             </button>
                         </AnchorLink>
                     </div>
-                    <div className='w-full p-10 pl-0 text-sm space-y-2'>
+                    <div className='w-full p-10 pl-0 text-sm space-y-2 text-black'>
                         <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
                             <h5>Phone: +97143413339</h5>

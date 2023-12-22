@@ -30,7 +30,7 @@ function AboutUs() {
                             </button>
                         </AnchorLink>
                     </div>
-                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm '>
+                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm text-black'>
                         <h3>Address :</h3>
                         <h5>Unit No: 4718</h5>
                         <h5>DMCC Business Centre</h5>

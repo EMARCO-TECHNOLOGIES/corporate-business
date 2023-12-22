@@ -41,7 +41,7 @@ function AboutUs() {
                             </button>
                         </AnchorLink>
                     </div>
-                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm'>
+                    <div className='w-full p-10 pl-0  space-y-1 flex flex-col text-sm text-black'>
                         <h3>Address :</h3>
                         <h5>Street: 30 N, GOULD ST, STE 33507</h5>
                         <h5>SHERIDAN, WY 82801</h5>
