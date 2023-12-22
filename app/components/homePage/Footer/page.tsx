@@ -4,24 +4,21 @@ import React from 'react'
 
 function Footer() {
 
-    const handleEmailClick = () => {
-        // window.location.href = 'mailto:info@sunoilgroup.com'
-        // if (!window.location.href) {
-        //     window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
-        // }
-        const platform = window.navigator.platform
-        console.log(platform, '454454')
+    // const handleEmailClick = () => {
+
+    //     const platform = window.navigator.platform
+    //     console.log(platform, '454454')
 
 
-        if (platform.toLowerCase().includes("ios") || platform.toLowerCase().includes("mac")) {
-            // window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
-            // window.location.href = 'mailto:?to=info@sunoilgroup.com'
-            window.location.href = 'mailto:info@sunoilgroup.com'
+    //     if (platform.toLowerCase().includes("ios") || platform.toLowerCase().includes("mac")) {
+    //         // window.location.href = 'ms-outlook://compose?to=info@sunoilgroup.com'
+    //         // window.location.href = 'mailto:?to=info@sunoilgroup.com'
+    //         window.location.href = 'mailto:info@sunoilgroup.com'
 
-        } else {
-            window.location.href = 'mailto:info@sunoilgroup.com'
-        }
-    };
+    //     } else {
+    //         window.location.href = 'mailto:info@sunoilgroup.com'
+    //     }
+    // };
 
     return (
         <div className='p-10 md:px-20 flex md:flex-row flex-colitems-center  bg-[#000000f8] '
@@ -40,7 +37,8 @@ function Footer() {
                     <div className='py-10 '>
 
                         {/* <a href='mailto:info@sunoilgroup.com' className='text-sm text-blue-500 ' ><span className='text-sm'>Mail us here:</span>  info@sunoilgroup.com</a> */}
-                        <span onClick={handleEmailClick} className='text-sm text-blue-500 cursor-pointer'><span className='text-sm'>Mail us here:</span> info@sunoilgroup.com</span>
+                        {/* <span onClick={handleEmailClick} className='text-sm text-blue-500 cursor-pointer'><span className='text-sm'>Mail us here:</span> info@sunoilgroup.com</span> */}
+                        <a href="mailto:info@sunoilgroup.com" className="text-sm text-blue-500">Mail us here:  info@sunoilgroup.com</a>
 
                     </div>
 
