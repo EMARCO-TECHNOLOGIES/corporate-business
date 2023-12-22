@@ -49,12 +49,12 @@ function AboutUs() {
                         <h5>Postal Code:   30104</h5>
                         <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
-                            <h5>+971 508595905</h5>
+                            <h5>+971-508595905</h5>
                         </div>
-                        <div className='flex space-x-5 items-center '>
+                        {/* <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
                             <h5>+230 58356664</h5>
-                        </div>
+                        </div> */}
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faEnvelope} />
                             <h5>info@sunoilllc.com</h5>

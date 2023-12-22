@@ -50,8 +50,8 @@ function AboutUs() {
                         <h5>Dubai, United Arab Emirates </h5>
                         <div className='flex space-x-5 items-center '>
                             <FontAwesomeIcon icon={faPhone} />
-                            <h5>+16463965545,</h5>
-                            <h5>+971508595905</h5>
+                            {/* <h5>+16463965545,</h5> */}
+                            <h5>+971-508595905</h5>
                         </div>
                         <div className='flex space-x-5 items-center'>
                             <FontAwesomeIcon icon={faEnvelope} />
