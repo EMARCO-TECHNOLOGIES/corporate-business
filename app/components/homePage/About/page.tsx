@@ -1,8 +1,9 @@
 "use client"
 
 import React from 'react'
+import { motion } from 'framer-motion'
+import { container, inputField, item } from '../../motionStyles/motionStyles'
 
-// import H1 from '../../H1/page'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function About() {
@@ -23,16 +24,25 @@ function About() {
 
 
     return (
-        <div className='flex lg:flex-row flex-col lg:space-x-10 md:p-10 justify-center relative' id='about'>
-            {/* <div className='lg:w-[50%] lg:p-10 p-5 flex lg:justify-start justify-center'>
-                <img src="/home/About.png" alt="" className='md:w-[610px] md:h-[369px]' />
-            </div> */}
-            <img src="/home/pattern1.png" alt="" className='w-[500px] h-[400px] absolute md:block hidden lg:left-0 lg:top-[0px] ' />
-            <div className='lg:w-[80%] lg:p-10 p-5 space-y-4'>
-                <h1 className={` font-bold md:text-[48px] md:text-left text-center text-[28px] `}>{heading}</h1>
-                <p className='text-[16px] text-black text-justify'>
+        <motion.div className={`flex items-center lg:flex-row flex-col lg:space-x-10 md:p-10 justify-center relative mt-5 `} id='about'
+
+        >
+            <motion.img src="/home/pattern1.png" alt="" className={`w-[500px] h-[400px] absolute md:block hidden lg:left-0 lg:top-[0px]`} variants={item} initial="hidden" whileInView={"visible"} exit={"hidden"} />
+            <motion.div className='lg:w-[80%] lg:p-10 p-5 space-y-4'>
+                <motion.h1 className={` font-bold md:text-[48px] md:text-left text-center text-[28px] `}
+                    variants={item}
+                    initial='hidden'
+                    whileInView='visible'
+                    exit="hidden"
+                >{heading}</motion.h1>
+                <motion.p className='text-[16px] text-black text-justify'
+                    variants={inputField}
+                    initial='hidden'
+                    whileInView='visible'
+                    exit="hidden"
+                >
                     {content}
-                </p>
+                </motion.p>
                 <div >
 
                     <AnchorLink href={`#contact`}>
@@ -41,9 +51,9 @@ function About() {
                         </button>
                     </AnchorLink>
                 </div>
-            </div>
-            <img src="/home/pattern2.png" alt="" className='w-[400px] h-[400px] absolute md:block hidden -right-40 top-48 -rotate-20 opacity-50' />
-        </div>
+            </motion.div>
+            <motion.img src="/home/pattern2.png" alt="" className='w-[400px] h-[400px] absolute md:block hidden -right-40 top-48 -rotate-20 opacity-50' variants={item} />
+        </motion.div>
     )
 }
 
