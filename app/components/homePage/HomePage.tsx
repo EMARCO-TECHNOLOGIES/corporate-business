@@ -62,14 +62,14 @@ function HomePage() {
                     exit="hidden"
                     variants={item}
                 >
-                    <div className='mb-3'>
+                    {/* <div className='mb-3'>
 
                         <AnchorLink href={`#contact`}>
                             <button className=' bg-transparent md:px-6 px-4 md:py-3 py-2 rounded-md uppercase  lg:top-[490px] lg:left-[680px] md:top-[320px] md:left-[350px] top-[130px] left-[130px] border-2 border-white bg-white text-indigo-400 hover:bg-black hover:text-white md:text-lg text-xs animate-pulse '>
                                 Enquire Now
                             </button>
                         </AnchorLink>
-                    </div>
+                    </div> */}
                     {/* <img src="/home/Banner1.jpg" alt="" className='w-screen h-full relative'/> */}
 
                     <div className=' lg:top-96 lg:left-96 md:top-64 md:left-52 top-24 left-16 '>

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
-import { container, item } from '../motionStyles/motionStyles';
+import { container, inputField, item } from '../motionStyles/motionStyles';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,14 +46,15 @@ const Navbar = () => {
                 </div> */}
                 <div className="text-xl font-bold text-gray-800  ">
                     {!isOpen ? (
-                        <motion.div className='absolute flex  lg:top-[32px] lg:left-20  md:top-[26px] md:left-6 top-[8px] left-5 cursor-pointer'
+                        <motion.div className='absolute flex  lg:top-[32px] lg:left-20  md:top-[26px] md:left-6 top-[8px] left-5 cursor-pointer '
                             variants={logo}
                             initial='hidden'
-                            animate='visible'
+                            whileInView='visible'
+                            exit={"hidden"}
 
                         >
-                            <motion.img variants={item} src="/Navbar/logo.png" alt="" width={100} height={100} className='lg:w-[100px] lg:h-[90px] md:w-[80px] md:h-[60px]  h-[50px] w-[50px]  bg-contain ' />
-                            <h1 className='lg:mt-7 md:mt-5 -ml-2 lg:text-3xl md:text-xl text-sm mt-4 hover:scale-110 '>SUN OIL GROUP</h1>
+                            <motion.img variants={item} src="/Navbar/logo.png" alt="" width={100} height={100} className='lg:w-[100px] lg:h-[90px] md:w-[80px] md:h-[60px]  h-[50px] w-[50px] bg-contain ' />
+                            <h1 className='lg:mt-7 md:mt-5 -ml-2 lg:text-2xl md:text-xl text-sm mt-4 hover:scale-110 transition-transform'>SUN OIL GROUP</h1>
                         </motion.div>
                     ) : null}
                 </div>
@@ -62,7 +63,7 @@ const Navbar = () => {
                 <div className="">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className={`absolute lg:top-16 lg:right-16 md:top-10 md:right-10 top-6 right-7 text-[#87b5eb] focus:outline-none`}
+                        className={`absolute lg:top-10 lg:right-16 md:top-10 md:right-10 top-6 right-7 text-[#87b5eb] focus:outline-none`}
                     >
                         <svg
                             className="h-6 w-6 lg:h-8 lg:w-8"
@@ -83,7 +84,12 @@ const Navbar = () => {
                 </div>
 
                 {/* Navbar Items */}
-                <motion.div className={` items-center ${isOpen ? 'flex' : 'hidden'} xl:space-x-32 md:space-x-20  space-x-1 md:bg-transparent p-5  absolute lg:top-12 lg:right-52 md:top-1 md:right-20 -top-2 right-[38px]`}>
+                <motion.div className={` items-center ${isOpen ? 'flex' : 'hidden'} xl:space-x-32 md:space-x-20  space-x-1 md:bg-transparent p-5  absolute lg:top-5 lg:right-52 md:top-1 md:right-20 -top-2 right-[38px] `}
+                    variants={inputField}
+                    animate={"visible"}
+                    initial="hidden"
+                    exit={"hidden"}
+                >
                     {NavbarItems.map((item, index) => (
                         // <div className=''>
 

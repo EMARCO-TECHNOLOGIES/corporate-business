@@ -33,7 +33,7 @@ function Directors() {
                         <div className='space-y-1'>
                             {/* <h6 className='font-bold text-sm md:hidden block'>CHIEF EXECUTIVE OFFICER</h6> */}
                             <h5 className='font-semibold md:text-xl text-sm text-black'>S.VENKATA RAJU</h5>
-                            <h3 className='font-normal md:text-sm text-xs'>DIRECTOR</h3>
+                            <h3 className='font-normal md:text-sm text-xs'>MANAGING DIRECTOR</h3>
                         </div>
                     </motion.div>
 

@@ -45,7 +45,7 @@ function Footer() {
                     <div className=' space-y-16 '>
 
                         <div className='flex flex-col text-white md:text-sm text-xs'>
-                            <small>Phone: +971-45656699</small>
+                            <small>Phone: 045656699</small>
                             <small>Phone: +971-508595905</small>
 
                         </div>
