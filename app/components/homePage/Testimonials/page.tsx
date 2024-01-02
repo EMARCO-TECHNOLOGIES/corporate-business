@@ -3,6 +3,9 @@
 import React, { createContext, useState } from 'react'
 // import H1 from '../../H1/page'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from 'framer-motion'
+import { container, item } from '../../motionStyles/motionStyles';
+
 
 function Testimonials() {
     const [activeIndex, setIndex] = useState(0)
@@ -29,18 +32,31 @@ function Testimonials() {
         setIndex(swiper.index);
     };
     return (
-        <div className='p-10 ' style={{
+        <motion.div className='p-10  ' style={{
             background: 'linear-gradient(0deg, rgba(0, 121, 220, 0.10) 0%, rgba(0, 121, 220, 0.10) 100%)',
-
             backgroundColor: 'lightgray'
-        }}>
+        }}
+            variants={container}
+            whileInView={"visible"}
+            initial="hidden"
+            exit={"hidden"}
+        >
 
 
-            <div
+            <motion.div
+                variants={item}
+                whileInView={"visible"}
+                initial="hidden"
+                exit={"hidden"}
             >
                 <h1 className={`font-bold text-[36px]`} >{`LISTEN TO OUR CLIENTS`}</h1>
-            </div>
-            <div className='flex justify-center'>
+            </motion.div>
+            <motion.div className='flex justify-center'
+                variants={item}
+                whileInView={"visible"}
+                initial="hidden"
+                exit={"hidden"}
+            >
                 <div
                     className='flex justify-center md:w-[900px]'
                 >
@@ -64,9 +80,9 @@ function Testimonials() {
                         ))}
                     </Swiper>
                 </div>
-            </div>
+            </motion.div>
 
-        </div >
+        </motion.div >
 
 
 
