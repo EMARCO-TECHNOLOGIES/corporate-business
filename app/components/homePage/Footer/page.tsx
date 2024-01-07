@@ -49,22 +49,22 @@ function Footer() {
                             <a href="mailto:info@sunoilgroup.com" className="text-sm text-blue-500">Mail us here:  info@sunoilgroup.com</a>
 
                         </div>
-                        <motion.div className='flex justify-center md:hidden '
+                        {/* <motion.div className='flex justify-center md:hidden '
                             variants={inputField}
                             initial="hidden"
                             whileInView={"visible"}
                             exit={"hidden"}
                         >
                             <img src="/Navbar/logo.png" alt="" className='md:w-[110px] md:h-[90px] w-12 h-12' />
-                        </motion.div>
+                        </motion.div> */}
 
                     </div>
                 </motion.div>
-                <motion.img src="/Navbar/logo.png" alt="" className='md:w-[110px] md:h-[90px] w-12 h-12 -mt-3 md:block hidden'
+                {/* <motion.img src="/Navbar/logo.png" alt="" className='md:w-[110px] md:h-[90px] w-12 h-12 -mt-3 md:block hidden'
                     variants={item}
                     initial="hidden"
                     whileInView={"visible"}
-                    exit={"hidden"} />
+                    exit={"hidden"} /> */}
 
             </div>
         </div>
