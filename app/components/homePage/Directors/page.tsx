@@ -23,7 +23,7 @@ function Directors() {
                     <motion.div className='space-y-5 flex flex-col justify-center' variants={item}>
                         <img src="/Directors/CEO.jpg" alt="CEO" className='rounded-full md:w-56 md:h-56 w-28 h-28 transition-transform hover:scale-110 self-center' />
                         <div className='space-y-1'>
-                            <h5 className='font-semibold md:text-xl text-sm text-black'>PRASANTH DEVARAJ</h5>
+                            <h5 className='font-semibold md:text-xl text-sm text-black'>PRASANTHA DEVARAJ</h5>
                             <h3 className='md:text-sm font-normal text-xs'>CHIEF EXECUTIVE OFFICER</h3>
                             {/* <h6 className='font-bold text-sm md:hidden block'>CHIEF EXECUTIVE OFFICER</h6> */}
                         </div>

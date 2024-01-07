@@ -29,7 +29,6 @@ function Footer() {
 
                         {/* <a href='mailto:info@sunoilgroup.com' className='text-sm text-blue-500 ' ><span className='text-sm'>Mail us here:</span>  info@sunoilgroup.com</a> */}
                         {/* <span onClick={handleEmailClick} className='text-sm text-blue-500 cursor-pointer'><span className='text-sm'>Mail us here:</span> info@sunoilgroup.com</span> */}
-                        <a href="mailto:info@sunoilgroup.com" className="text-sm text-blue-500">Mail us here:  info@sunoilgroup.com</a>
 
                     </div>
 
@@ -44,9 +43,10 @@ function Footer() {
                     <h3 className='font-semibold text-white mb-3' >{`Contact Us`}</h3>
                     <div className=' space-y-16 '>
 
-                        <div className='flex flex-col text-white md:text-sm text-xs'>
-                            <small>Phone: 045656699</small>
+                        <div className='flex flex-col text-white md:text-sm text-xs space-y-2'>
+                            <small>Phone:+971-045656699</small>
                             <small>Phone: +971-508595905</small>
+                            <a href="mailto:info@sunoilgroup.com" className="text-sm text-blue-500">Mail us here:  info@sunoilgroup.com</a>
 
                         </div>
                         <motion.div className='flex justify-center md:hidden '
