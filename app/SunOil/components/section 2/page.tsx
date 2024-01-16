@@ -9,7 +9,7 @@ import { inputField, item } from '../../../components/motionStyles/motionStyles'
 
 function AboutUs() {
 
-    const content = 'Sunoil Trading Refined Oil Product Abroad LLC (SUN) is an energy company. It carries out the exploration, development and production of crude oil and natural gas, transportation of crude oil and production of liquefied petroleum gas (LPG). The company’s business operations are mainly confined in Arab and African countries. It also has participating interest in exploration blocks in Kampala and in various projects in Libya, Gabon, Nigeria, the US, Venezuela, Mozambique, Bangladesh, Russia, and Israel. The company also provides upstream related services and operates crude and product pipelines. SUN is headquartered in Dubai, United Arab Emirates.'
+    const content = 'Sunoil Trading Refined Oil Product Abroad LLC (SUN) is an energy company. It carries out the exploration, development and production of crude oil and natural gas, transportation of crude oil and production of liquefied petroleum gas (LPG). The company’s business operations are mainly confined in Arab and African countries. It also has participating interest in exploration blocks in Kampala and in various projects in Libya, Gabon, Nigeria, the US, Venezuela, Mozambique, Bangladesh. The company also provides upstream related services and operates crude and product pipelines. SUN is headquartered in Dubai, United Arab Emirates.'
 
 
 
